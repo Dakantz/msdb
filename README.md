@@ -10,6 +10,7 @@ This collection of scripts allows you to collect thousands of real movie scripts
 
 ```python
 from acquire_script import load_scripts
+#load scripts into ./data folder as JSON
 load_scripts()
 ```
 
@@ -20,7 +21,7 @@ To illustrate a few applications of the Database, I've written two (as of today)
 ### Classifier (working, TF)
 
 The classifier is written in Python using the Tensorflow framework.
-It is able to classify the scripts into the provided categories. (can be found [here](classify.ipynb), it incluides loading the dataset into a Tensorflow dataset)
+It is able to classify the scripts into the provided categories (based on the first 1000 words). (can be found [here](classify.ipynb), it incluides loading the dataset into a Tensorflow dataset)
 
 ### Generator (in progress, PyTorch,TF)
 
